@@ -27,10 +27,6 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
-    - uses: actions/upload-artifact@v2
-      with:
-       name: my-app-1.0-SNAPSHOT.jar
-       path: build/libs
 
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
